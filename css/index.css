@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "SuperMario";
+    src: url('./fonts/SuperMario256.ttf');
+}
+
+body{
+    height: 100vh;
+    background-color: red;
+}
+
+h1{
+    font-family: "SuperMario";
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    
+}
+
+.jogo{
+    width: 640px;
+    height: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    perspective: 1000px;
+}
+
+.cartao{
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.cartao:active{
+    transform: scale(0.97);
+    transition: transform .2s;
+}
+
+.cartao.virado{
+    transform: rotateY(180deg);
+}
+
+.frente-cartao, .verso-cartao{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    background-color: white;
+    backface-visibility: hidden;
+}
+
+.frente-cartao{
+    transform: rotateY(180deg);
+}
