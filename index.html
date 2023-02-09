@@ -9,60 +9,108 @@
 </head>
 <body>
 
-    <h1>Jogo da Memória</h1>
-    
-    <section class="jogo">
-        <div class="cartao" data-info="pikachu">
-            <img src="./img/pikachu.png" class="frente-cartao" alt="Frente do cartao">
-            <img src="./img/Pokemon-carta-verso.jpg" class="verso-cartao" alt="Verso do cartao">
-        </div>
-        <div class="cartao" data-info="Charmander">
-            <img src="./img/Charmander.png" class="frente-cartao" alt="Frente do cartao">
-            <img src="./img/Pokemon-carta-verso.jpg" class="verso-cartao" alt="Verso do cartao">
-        </div>
-        <div class="cartao" data-info="Bukbasaur">
-            <img src="./img/Bukbasaur.png" class="frente-cartao" alt="Frente do cartao">
-            <img src="./img/Pokemon-carta-verso.jpg" class="verso-cartao" alt="Verso do cartao">
-        </div>
-        <div class="cartao" data-info="Bukbasaur">
-            <img src="./img/Bukbasaur.png" class="frente-cartao" alt="Frente do cartao">
-            <img src="./img/Pokemon-carta-verso.jpg" class="verso-cartao" alt="Verso do cartao">
-        </div>
-        <div class="cartao" data-info="Squirtle">
-            <img src="./img/Squirtle.png" class="frente-cartao" alt="Frente do cartao">
-            <img src="./img/Pokemon-carta-verso.jpg" class="verso-cartao" alt="Verso do cartao">
-        </div>
-        <div class="cartao" data-info="pikachu">
-            <img src="./img/pikachu.png" class="frente-cartao" alt="Frente do cartao">
-            <img src="./img/Pokemon-carta-verso.jpg" class="verso-cartao" alt="Verso do cartao">
-        </div>
-        <div class="cartao" data-info="caterpie">
-            <img src="./img/caterpie.png" class="frente-cartao" alt="Frente do cartao">
-            <img src="./img/Pokemon-carta-verso.jpg" class="verso-cartao" alt="Verso do cartao">
-        </div>
-        <div class="cartao" data-info="Squirtle">
-            <img src="./img/Squirtle.png" class="frente-cartao" alt="Frente do cartao">
-            <img src="./img/Pokemon-carta-verso.jpg" class="verso-cartao" alt="Verso do cartao">
-        </div>
-        <div class="cartao" data-info="caterpie">
-            <img src="./img/caterpie.png" class="frente-cartao" alt="Frente do cartao">
-            <img src="./img/Pokemon-carta-verso.jpg" class="verso-cartao" alt="Verso do cartao">
-        </div>
-        <div class="cartao" data-info="pidegy">
-            <img src="./img/pidegy.png" class="frente-cartao" alt="Frente do cartao">
-            <img src="./img/Pokemon-carta-verso.jpg" class="verso-cartao" alt="Verso do cartao">
-        </div>
-        <div class="cartao" data-info="Charmander">
-            <img src="./img/Charmander.png" class="frente-cartao" alt="Frente do cartao">
-            <img src="./img/Pokemon-carta-verso.jpg" class="verso-cartao" alt="Verso do cartao">
-        </div>
-        <div class="cartao" data-info="pidegy">
-            <img src="./img/pidegy.png" class="frente-cartao" alt="Frente do cartao">
-            <img src="./img/Pokemon-carta-verso.jpg" class="verso-cartao" alt="Verso do cartao">
+    <div>
+
+        <h1>Jogo da Memória</h1>
+
+        <section class="placar">
+
+            <section class="resultado">
+                <h2>Placar</h2>
+                <div id="resultado">0</div>
+            </section>
+
+            <section class="resultado">
+                <h2>Tempo</h2>
+                <div id="tempo">0</div>
+            </section>
+
+        </section>
+
+        <section class="jogo">
+
+            <div class="cartao" data-info="pikachu">
+                <img src="./img/pikachu.png" class="frente-cartao" alt="Frente do cartao">
+                <img src="./img/Pokemon-carta-verso.jpg" class="verso-cartao" alt="Verso do cartao">
+            </div>
+            <div class="cartao" data-info="pikachu">
+                <img src="./img/pikachu.png" class="frente-cartao" alt="Frente do cartao">
+                <img src="./img/Pokemon-carta-verso.jpg" class="verso-cartao" alt="Verso do cartao">
+            </div>
+            <div class="cartao" data-info="Charmander">
+                <img src="./img/Charmander.png" class="frente-cartao" alt="Frente do cartao">
+                <img src="./img/Pokemon-carta-verso.jpg" class="verso-cartao" alt="Verso do cartao">
+            </div>
+            <div class="cartao" data-info="Charmander">
+                <img src="./img/Charmander.png" class="frente-cartao" alt="Frente do cartao">
+                <img src="./img/Pokemon-carta-verso.jpg" class="verso-cartao" alt="Verso do cartao">
+            </div>
+            <div class="cartao" data-info="Bukbasaur">
+                <img src="./img/Bukbasaur.png" class="frente-cartao" alt="Frente do cartao">
+                <img src="./img/Pokemon-carta-verso.jpg" class="verso-cartao" alt="Verso do cartao">
+            </div>
+            <div class="cartao" data-info="Bukbasaur">
+                <img src="./img/Bukbasaur.png" class="frente-cartao" alt="Frente do cartao">
+                <img src="./img/Pokemon-carta-verso.jpg" class="verso-cartao" alt="Verso do cartao">
+            </div>
+            <div class="cartao" data-info="Squirtle">
+                <img src="./img/Squirtle.png" class="frente-cartao" alt="Frente do cartao">
+                <img src="./img/Pokemon-carta-verso.jpg" class="verso-cartao" alt="Verso do cartao">
+            </div>
+            <div class="cartao" data-info="Squirtle">
+                <img src="./img/Squirtle.png" class="frente-cartao" alt="Frente do cartao">
+                <img src="./img/Pokemon-carta-verso.jpg" class="verso-cartao" alt="Verso do cartao">
+            </div>
+            <div class="cartao" data-info="caterpie">
+                <img src="./img/caterpie.png" class="frente-cartao" alt="Frente do cartao">
+                <img src="./img/Pokemon-carta-verso.jpg" class="verso-cartao" alt="Verso do cartao">
+            </div>
+            <div class="cartao" data-info="caterpie">
+                <img src="./img/caterpie.png" class="frente-cartao" alt="Frente do cartao">
+                <img src="./img/Pokemon-carta-verso.jpg" class="verso-cartao" alt="Verso do cartao">
+            </div>
+            <div class="cartao" data-info="pidegy">
+                <img src="./img/pidegy.png" class="frente-cartao" alt="Frente do cartao">
+                <img src="./img/Pokemon-carta-verso.jpg" class="verso-cartao" alt="Verso do cartao">
+            </div>
+            <div class="cartao" data-info="pidegy">
+                <img src="./img/pidegy.png" class="frente-cartao" alt="Frente do cartao">
+                <img src="./img/Pokemon-carta-verso.jpg" class="verso-cartao" alt="Verso do cartao">
+            </div>
+
+            <br/>
+            
+        </section>
+    </div>
+
+    <section id="recordes">
+
+        <h2>Recordes</h2>
+
+        <br/>
+
+        <table id="resultados"> 
+            <thead>
+                <td>
+                    Nome
+                </td>
+                <td>
+                    Pontuação
+                </td>
+                <td>
+                    Tempo
+                </td>
+            </thead> 
+        </table>
+
+        <div>
+            <button class="reiniciar" onclick="reiniciarJogo()">Reiniciar Jogo</button>
+            <button class="reiniciar" onclick="reiniciarPlacar()">Reiniciar Placar</button>
         </div>
         
     </section>
 
     <script src="./js/index.js"></script>
+
 </body>
 </html>

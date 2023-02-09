@@ -11,7 +11,26 @@
 
 body{
     height: 100vh;
-    background-image: url(../img/capa_de_Pokemon.webp);
+    background-color: #006064;
+    align-items: flex-start;
+    justify-content: center;
+    display: flex;
+}
+
+.placar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    width: 100%;
+}
+
+.resultado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
 }
 
 h1{
@@ -21,9 +40,8 @@ h1{
     margin: 5px;
     padding: 5px;
     color: rgb(0, 0, 0);
-    font-size: 70px;
+    font-size: 50px;
     font-weight: bold;
-    
 }
 
 .jogo{
@@ -66,4 +84,31 @@ h1{
 
 .frente-cartao{
     transform: rotateY(180deg);
+}
+
+#recordes{
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+    display: none;
+}
+
+td{
+    border: 1px solid white;
+    text-align: center;
+    width: 200px;
+}
+
+.reiniciar{
+    width: 40%;
+    border-radius: 5px;
+    background-color: #060AB2;
+    color: white;
+    margin-top: 10px;
+    height: 30px;
+}
+
+.reiniciar:hover{
+    color: #060AB2;
+    background-color: orange;
 }
